@@ -18,6 +18,9 @@
 		 .parent {
 			background: red;
 			height: 64px;
+			display: flex;
+			justify-content: space-between;
+			
 		 }   
     .logo {
 		background: blue;
@@ -25,6 +28,16 @@
 		height:100%;
 		 
 	}
+	menu_right {
+		background: yellow;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.menu_item {
+			background: purple;
+			widht: 72px;
+		}
      .item  {
 		background: blue;
 		color: white;
@@ -35,12 +48,28 @@
 </head>
 <body>
 	<div class="container">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
 		<div class="parent">
-		</div class="logo">
-		LOGO
+			<div class="logo">
+				LOGO
 	</div>
-</div>
-</div>
-
+    </div> class="menu_right">
+               <div class="menu_item">
+	                    お知らせ
+                  </div> 
+			       <div class="menu_item">
+					ログイン
+              </div>
+                    <div class="menu_item">
+	                会員登録
+               </div>
+             <div class="menu_item">
+	                    出品
+                </div>
+		     </div>
+		</div>
+	</div>	
 		</body>
 		</html>
