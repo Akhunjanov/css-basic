@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+  }
+  html {
+	font-size: 16px;
+}
+.container {
+    display: block;
+	background: grey;
+    width: 100vw;
+    height: 100vh;
+
+   .item  {
+    background: pink;
+    margin: 10px;
+padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+	font-size: 3rem;
+     //grid-gap: 16px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	font-size: 3rem;
+
+	@media ( 0px < width) {
+		background: pink;
+		grid-template-columns: 1fr;
+	}
+	@media ( width > 500px) {
+		background: blue;
+		grid-template-columns: 1fr 1fr;
+	}
+	@media ( width > 768px) {
+		background: green;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	@media ( width > 968px) {
+		background: brown;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+        
+    }  
+    }
+        
+    
+   
+
