@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li, a {
+	color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+	padding: 80px;
+	background: #ccc;
+	height: 100vh;
+}
+img {
+	vertical-align: bottom;
+}
+.container {
+	max-width: 1160px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+/*ヘッダーAとヘッダーBの間隔を空ける*/
+header + header {
+	margin-top: 100px;
+}
+
+
+/*ヘッダーA*/
+.header_a {
+	color: #fff;
+	background: #000;
+}
+.header_a > .container {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	max-width: none;
+}
+
+/*ロゴ*/
+.area_logo_header .logo {
+	display: block;
+}
+.area_logo_header .logo img {
+	height: 25px;
+	vertical-align: bottom;
+}
+
+/*ナビゲーション*/
+.area_nav_header {
+	margin-left: auto;
+}
+
+/*リストナビ */
+.list_nav_header {
+	display: flex;
+	align-items: center;
+}
+.list_nav_header > li + li {
+	margin-left: 40px;
+}
+.list_nav_header a {
+	color: #fff;
+	font: 500 15px/1em 'note sans japanese', sans-serif;
+}
+.list_nav_header .btn_contact {
+	color: #000;
+	display: flex;
+	align-items: center;
+	height: 36px;
+	padding: 0 24px 0 48px;
+	background: #0cf;
+	border-radius: 2px;
+	position: relative;
+}
+.list_nav_header .btn_contact:before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(./cmn/img/ico/ico_mail_black.svg) no-repeat center center;
+	background-size: contain;
+	/*background-color: red;*/
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+
+}
+
+/*ヘッダーB*/
+.header_b {
+	background: #fff;
+
+}
+.header_b > .container {
+	height: 90px;
+	display: flex;
+	align-items: center;
+	max-width: none;
+}
+/*ロゴエリア_b*/
+.area_logo_header_b .logo{
+	display: block;
+}
+.area_logo_header_b .logo img{
+	height: 60px;
+}
+.area_nav_header_b {
+	margin-left: auto;	
+}
+/*リストナビ上*/
+.list_nav_sub_header_b {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.list_nav_sub_header_b > li + li {
+	margin-left: 40px;
+}
+.list_nav_sub_header_b a {
+	font: 300 13px 'noto sans japanese', sans-serif;
+}
+/*リストナビ下*/
+.list_nav_header_b {
+	display: flex;
+	align-items: center;
+	border-right: 2px solid red;
+}	
+
+.list_nav_header_b a {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	padding: 0 30px;
+	border-left: 2px solid red;
+}
+.list_nav_header_b a:hover {
+	background: black;
+}
+
+
+
